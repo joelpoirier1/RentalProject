@@ -64,18 +64,26 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        mainLoginPanel.setBackground(new java.awt.Color(204, 255, 255));
         mainLoginPanel.setMinimumSize(new java.awt.Dimension(850, 475));
 
         jLabel1.setText("Property Rental Application - Main Login");
+        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        loginAsRenterButton.setBackground(new java.awt.Color(102, 204, 255));
+        loginAsRenterButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         loginAsRenterButton.setText("Login as Renter");
+        loginAsRenterButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         loginAsRenterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginAsRenterButtonActionPerformed(evt);
             }
         });
 
+        loginAsLandlordButton.setBackground(new java.awt.Color(153, 255, 153));
+        loginAsLandlordButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         loginAsLandlordButton.setText("Login as Landlord");
+        loginAsLandlordButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         loginAsLandlordButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginAsLandlordButtonActionPerformed(evt);
@@ -89,12 +97,12 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(mainLoginPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(mainLoginPanelLayout.createSequentialGroup()
-                                                .addComponent(loginAsRenterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(loginAsLandlordButton)))
-                                .addContainerGap(496, Short.MAX_VALUE))
+                                                .addComponent(loginAsRenterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                                                .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap())
         );
         mainLoginPanelLayout.setVerticalGroup(
                 mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,10 +110,10 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18)
-                                .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(loginAsRenterButton)
-                                        .addComponent(loginAsLandlordButton))
-                                .addContainerGap(392, Short.MAX_VALUE))
+                                .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(loginAsRenterButton, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
+                                        .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap())
         );
 
         jLabel11.setText("Unregistered Renter");
@@ -165,18 +173,24 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap(64, Short.MAX_VALUE))
         );
 
+        registeredRenterLoginPanel.setBackground(new java.awt.Color(204, 204, 255));
         registeredRenterLoginPanel.setMinimumSize(new java.awt.Dimension(350, 175));
 
         jLabel6.setText("Registered Renter Login");
+        jLabel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        submitRenterLoginButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         submitRenterLoginButton.setText("Submit");
+        submitRenterLoginButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         submitRenterLoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitRenterLoginButtonActionPerformed(evt);
             }
         });
 
+        backToMainLoginFromRegisteredRenterButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         backToMainLoginFromRegisteredRenterButton.setText("Back");
+        backToMainLoginFromRegisteredRenterButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backToMainLoginFromRegisteredRenterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backToMainLoginFromRegisteredRenterButtonActionPerformed(evt);
@@ -245,18 +259,24 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
+        landlordLoginPanel.setBackground(new java.awt.Color(153, 255, 153));
         landlordLoginPanel.setMinimumSize(new java.awt.Dimension(350, 175));
 
         jLabel3.setText("Landlord Login");
+        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        submitLandlordLoginButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         submitLandlordLoginButton.setText("Submit");
+        submitLandlordLoginButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         submitLandlordLoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitLandlordLoginButtonActionPerformed(evt);
             }
         });
 
+        backToMainLoginFromLandlordButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         backToMainLoginFromLandlordButton.setText("Back");
+        backToMainLoginFromLandlordButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backToMainLoginFromLandlordButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backToMainLoginFromLandlordButtonActionPerformed(evt);
@@ -325,25 +345,33 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
+        renterLoginPanel.setBackground(new java.awt.Color(153, 204, 255));
         renterLoginPanel.setMinimumSize(new java.awt.Dimension(300, 200));
 
         jLabel2.setText("Renter Login ");
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        continueAsUnregisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         continueAsUnregisteredButton.setText("Continue as Unregistered User");
+        continueAsUnregisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         continueAsUnregisteredButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 continueAsUnregisteredButtonActionPerformed(evt);
             }
         });
 
+        loginAsRegisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         loginAsRegisteredButton.setText("Login as Registered User");
+        loginAsRegisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         loginAsRegisteredButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginAsRegisteredButtonActionPerformed(evt);
             }
         });
 
+        backToMainLoginFromRenterButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         backToMainLoginFromRenterButton.setText("Back");
+        backToMainLoginFromRenterButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backToMainLoginFromRenterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backToMainLoginFromRenterButtonActionPerformed(evt);
@@ -368,7 +396,7 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(renterLoginPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                                 .addComponent(continueAsUnregisteredButton)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(loginAsRegisteredButton)
