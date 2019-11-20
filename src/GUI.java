@@ -32,6 +32,18 @@ public class GUI extends javax.swing.JFrame {
         loginAsLandlordButton = new javax.swing.JButton();
         mainUnregisteredGUI = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        unregisteredDisplay = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
+        searchPropertyUnregisteredButton = new javax.swing.JButton();
+        showAllListingsUnregisteredButton = new javax.swing.JButton();
+        upArrow = new javax.swing.JButton();
+        unregisteredIDField = new javax.swing.JTextField();
+        downArrow = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        emailLandlordUnregistered = new javax.swing.JButton();
+        requestContractUnregistered = new javax.swing.JButton();
+        logoutButton = new javax.swing.JButton();
         mainRegisteredGUI = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         mainLandlordGUI = new javax.swing.JPanel();
@@ -116,7 +128,86 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
+        mainUnregisteredGUI.setBackground(new java.awt.Color(255, 204, 204));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel11.setText("Unregistered Renter");
+        jLabel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        unregisteredDisplay.setEditable(false);
+        unregisteredDisplay.setColumns(20);
+        unregisteredDisplay.setRows(5);
+        unregisteredDisplay.setText(" ");
+        jScrollPane5.setViewportView(unregisteredDisplay);
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 2, 16)); // NOI18N
+        jLabel12.setText("Display");
+
+        searchPropertyUnregisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        searchPropertyUnregisteredButton.setText("Search for Property");
+        searchPropertyUnregisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        searchPropertyUnregisteredButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchPropertyUnregisteredButtonActionPerformed(evt);
+            }
+        });
+
+        showAllListingsUnregisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        showAllListingsUnregisteredButton.setText("Show All Listings");
+        showAllListingsUnregisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        showAllListingsUnregisteredButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showAllListingsUnregisteredButtonActionPerformed(evt);
+            }
+        });
+
+        upArrow.setText("^");
+        upArrow.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upArrowActionPerformed(evt);
+            }
+        });
+
+        unregisteredIDField.setEditable(false);
+        unregisteredIDField.setText(" ");
+        unregisteredIDField.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        downArrow.setText("˅");
+        downArrow.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                downArrowActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setText("Landlord to Contact:  ");
+
+        emailLandlordUnregistered.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        emailLandlordUnregistered.setText("Email Landlord");
+        emailLandlordUnregistered.setToolTipText("Email landlord to request more information");
+        emailLandlordUnregistered.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        emailLandlordUnregistered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailLandlordUnregisteredActionPerformed(evt);
+            }
+        });
+
+        requestContractUnregistered.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        requestContractUnregistered.setText("Request Contract");
+        requestContractUnregistered.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        requestContractUnregistered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                requestContractUnregisteredActionPerformed(evt);
+            }
+        });
+
+        logoutButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        logoutButton.setText("Logout");
+        logoutButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        logoutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout mainUnregisteredGUILayout = new javax.swing.GroupLayout(mainUnregisteredGUI);
         mainUnregisteredGUI.setLayout(mainUnregisteredGUILayout);
@@ -124,15 +215,67 @@ public class GUI extends javax.swing.JFrame {
                 mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jLabel11)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(18, 18, 18)
+                                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                        .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                                .addComponent(emailLandlordUnregistered, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                                                                                .addComponent(searchPropertyUnregisteredButton)
+                                                                                                .addComponent(unregisteredIDField))
+                                                                                        .addComponent(jLabel13))
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                                                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                        .addComponent(upArrow)
+                                                                                        .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                                .addComponent(requestContractUnregistered, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                                                                                .addComponent(showAllListingsUnregisteredButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                                                        .addComponent(downArrow)))
+                                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainUnregisteredGUILayout.createSequentialGroup()
+                                                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                                                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                .addContainerGap())
         );
         mainUnregisteredGUILayout.setVerticalGroup(
                 mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel11)
-                                .addContainerGap(64, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(searchPropertyUnregisteredButton)
+                                                        .addComponent(showAllListingsUnregisteredButton))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(jLabel13)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(unregisteredIDField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(9, 9, 9))
+                                                        .addGroup(mainUnregisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(upArrow)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(downArrow)))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(emailLandlordUnregistered)
+                                                        .addComponent(requestContractUnregistered))
+                                                .addGap(18, 18, 18)
+                                                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jScrollPane5))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel10.setText("Registered Renter");
@@ -524,6 +667,40 @@ public class GUI extends javax.swing.JFrame {
         renterLoginPanel.setVisible(false);
     }
 
+    private void upArrowActionPerformed(java.awt.event.ActionEvent evt) {
+        if(!unregisteredDisplay.getText().equals(" "))
+        {
+            //set text field
+        }
+    }
+
+    private void searchPropertyUnregisteredButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void showAllListingsUnregisteredButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        // Display all listings to unregisteredDisplay
+    }
+
+    private void downArrowActionPerformed(java.awt.event.ActionEvent evt) {
+        if(!unregisteredDisplay.getText().equals(" "))
+        {
+            //set text field
+        }
+    }
+
+    private void emailLandlordUnregisteredActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void requestContractUnregisteredActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        System.exit(1);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -564,9 +741,13 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton backToMainLoginFromRegisteredRenterButton;
     private javax.swing.JButton backToMainLoginFromRenterButton;
     private javax.swing.JButton continueAsUnregisteredButton;
+    private javax.swing.JButton downArrow;
+    private javax.swing.JButton emailLandlordUnregistered;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -579,12 +760,14 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JPanel landlordLoginPanel;
     private javax.swing.JTextArea landlordPasswordTextArea;
     private javax.swing.JTextArea landlordUsernameTextArea;
     private javax.swing.JButton loginAsLandlordButton;
     private javax.swing.JButton loginAsRegisteredButton;
     private javax.swing.JButton loginAsRenterButton;
+    private javax.swing.JButton logoutButton;
     private javax.swing.JPanel mainLandlordGUI;
     private javax.swing.JPanel mainLoginPanel;
     private javax.swing.JPanel mainRegisteredGUI;
@@ -593,7 +776,13 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel renterLoginPanel;
     private javax.swing.JTextArea renterPasswordTextArea;
     private javax.swing.JTextArea renterUsernameTextArea;
+    private javax.swing.JButton requestContractUnregistered;
+    private javax.swing.JButton searchPropertyUnregisteredButton;
+    private javax.swing.JButton showAllListingsUnregisteredButton;
     private javax.swing.JButton submitLandlordLoginButton;
     private javax.swing.JButton submitRenterLoginButton;
+    private javax.swing.JTextArea unregisteredDisplay;
+    private javax.swing.JTextField unregisteredIDField;
+    private javax.swing.JButton upArrow;
     // End of variables declaration
 }
