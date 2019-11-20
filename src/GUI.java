@@ -13,7 +13,7 @@ public class GUI extends javax.swing.JFrame {
         registeredRenterLoginPanel.setVisible(false);
         landlordLoginPanel.setVisible(false);
         renterLoginPanel.setVisible(false);
-
+        managerLoginPanel.setVisible(false);
 
     }
 
@@ -122,19 +122,14 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(mainLoginPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(mainLoginPanelLayout.createSequentialGroup()
-                                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addContainerGap())
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(mainLoginPanelLayout.createSequentialGroup()
                                                 .addComponent(loginAsRenterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(loginAsManagerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 25, Short.MAX_VALUE))))
-                        .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainLoginPanelLayout.createSequentialGroup()
-                                        .addContainerGap(428, Short.MAX_VALUE)
-                                        .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(25, 25, 25)))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                                                .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(loginAsManagerButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addContainerGap())
         );
         mainLoginPanelLayout.setVerticalGroup(
                 mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,14 +140,11 @@ public class GUI extends javax.swing.JFrame {
                                 .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(loginAsRenterButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(mainLoginPanelLayout.createSequentialGroup()
-                                                .addGap(0, 215, Short.MAX_VALUE)
+                                                .addGap(0, 11, Short.MAX_VALUE)
+                                                .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
                                                 .addComponent(loginAsManagerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addContainerGap())
-                        .addGroup(mainLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(mainLoginPanelLayout.createSequentialGroup()
-                                        .addGap(68, 68, 68)
-                                        .addComponent(loginAsLandlordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(221, Short.MAX_VALUE)))
         );
 
         mainUnregisteredGUI.setBackground(new java.awt.Color(255, 204, 204));
