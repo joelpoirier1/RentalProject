@@ -45,8 +45,6 @@ public class GUI extends javax.swing.JFrame {
         emailLandlordUnregistered = new javax.swing.JButton();
         requestContractUnregistered = new javax.swing.JButton();
         logoutButton = new javax.swing.JButton();
-        mainRegisteredGUI = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
         mainLandlordGUI = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         registeredRenterLoginPanel = new javax.swing.JPanel();
@@ -76,6 +74,20 @@ public class GUI extends javax.swing.JFrame {
         backToMainLoginFromRenterButton = new javax.swing.JButton();
         managerLoginPanel = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
+        mainRegisteredGUI = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        registeredDisplay = new javax.swing.JTextArea();
+        jLabel16 = new javax.swing.JLabel();
+        searchPropertyRegisteredButton = new javax.swing.JButton();
+        showAllListingsRegisteredButton = new javax.swing.JButton();
+        upArrow1 = new javax.swing.JButton();
+        unregisteredIDField1 = new javax.swing.JTextField();
+        downArrow1 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        emailLandlordRegistered = new javax.swing.JButton();
+        requestContractRegistered = new javax.swing.JButton();
+        logoutButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -251,7 +263,7 @@ public class GUI extends javax.swing.JFrame {
                                                                                                 .addComponent(searchPropertyUnregisteredButton)
                                                                                                 .addComponent(unregisteredIDField))
                                                                                         .addComponent(jLabel13))
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                                                                                 .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                                         .addComponent(upArrow)
                                                                                         .addGroup(mainUnregisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -294,26 +306,7 @@ public class GUI extends javax.swing.JFrame {
                                                 .addGap(18, 18, 18)
                                                 .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(jScrollPane5))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jLabel10.setText("Registered Renter");
-
-        javax.swing.GroupLayout mainRegisteredGUILayout = new javax.swing.GroupLayout(mainRegisteredGUI);
-        mainRegisteredGUI.setLayout(mainRegisteredGUILayout);
-        mainRegisteredGUILayout.setHorizontalGroup(
-                mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel10)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        mainRegisteredGUILayout.setVerticalGroup(
-                mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel10)
-                                .addContainerGap(64, Short.MAX_VALUE))
+                                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         jLabel9.setText("Landlord");
@@ -586,6 +579,156 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
+        mainRegisteredGUI.setBackground(new java.awt.Color(255, 204, 0));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel15.setText("Registered Renter");
+        jLabel15.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        registeredDisplay.setEditable(false);
+        registeredDisplay.setColumns(20);
+        registeredDisplay.setRows(5);
+        registeredDisplay.setText(" ");
+        jScrollPane6.setViewportView(registeredDisplay);
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 2, 16)); // NOI18N
+        jLabel16.setText("Display");
+
+        searchPropertyRegisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        searchPropertyRegisteredButton.setText("Search for Property");
+        searchPropertyRegisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        searchPropertyRegisteredButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchPropertyRegisteredButtonActionPerformed(evt);
+            }
+        });
+
+        showAllListingsRegisteredButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        showAllListingsRegisteredButton.setText("Show All Listings");
+        showAllListingsRegisteredButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        showAllListingsRegisteredButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showAllListingsRegisteredButtonActionPerformed(evt);
+            }
+        });
+
+        upArrow1.setText("^");
+        upArrow1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upArrow1ActionPerformed(evt);
+            }
+        });
+
+        unregisteredIDField1.setEditable(false);
+        unregisteredIDField1.setText(" ");
+        unregisteredIDField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        downArrow1.setText("˅");
+        downArrow1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                downArrow1ActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("Landlord to Contact:  ");
+
+        emailLandlordRegistered.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        emailLandlordRegistered.setText("Email Landlord");
+        emailLandlordRegistered.setToolTipText("Email landlord to request more information");
+        emailLandlordRegistered.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        emailLandlordRegistered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailLandlordRegisteredActionPerformed(evt);
+            }
+        });
+
+        requestContractRegistered.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        requestContractRegistered.setText("Request Contract");
+        requestContractRegistered.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        requestContractRegistered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                requestContractRegisteredActionPerformed(evt);
+            }
+        });
+
+        logoutButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        logoutButton1.setText("Logout");
+        logoutButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        logoutButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout mainRegisteredGUILayout = new javax.swing.GroupLayout(mainRegisteredGUI);
+        mainRegisteredGUI.setLayout(mainRegisteredGUILayout);
+        mainRegisteredGUILayout.setHorizontalGroup(
+                mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(18, 18, 18)
+                                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                        .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                                .addComponent(emailLandlordRegistered, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                                                                                .addComponent(searchPropertyRegisteredButton)
+                                                                                                .addComponent(unregisteredIDField1))
+                                                                                        .addComponent(jLabel17))
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                                                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                        .addComponent(upArrow1)
+                                                                                        .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                                .addComponent(requestContractRegistered, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                                                                                                .addComponent(showAllListingsRegisteredButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                                                        .addComponent(downArrow1)))
+                                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainRegisteredGUILayout.createSequentialGroup()
+                                                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                                                .addComponent(logoutButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                .addContainerGap())
+        );
+        mainRegisteredGUILayout.setVerticalGroup(
+                mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(searchPropertyRegisteredButton)
+                                                        .addComponent(showAllListingsRegisteredButton))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(jLabel17)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(unregisteredIDField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(9, 9, 9))
+                                                        .addGroup(mainRegisteredGUILayout.createSequentialGroup()
+                                                                .addComponent(upArrow1)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(downArrow1)))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(mainRegisteredGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(emailLandlordRegistered)
+                                                        .addComponent(requestContractRegistered))
+                                                .addGap(18, 18, 18)
+                                                .addComponent(logoutButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jScrollPane6))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -599,11 +742,6 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(mainLandlordGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -626,6 +764,11 @@ public class GUI extends javax.swing.JFrame {
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(61, 61, 61)
+                                        .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(61, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -638,11 +781,6 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(mainLandlordGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -665,6 +803,11 @@ public class GUI extends javax.swing.JFrame {
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(76, 76, 76)
+                                        .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(77, Short.MAX_VALUE)))
         );
 
         pack();
@@ -754,6 +897,34 @@ public class GUI extends javax.swing.JFrame {
         landlordLoginPanel.setVisible(true);
     }
 
+    private void searchPropertyRegisteredButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void showAllListingsRegisteredButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void upArrow1ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void downArrow1ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void emailLandlordRegisteredActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void requestContractRegisteredActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void logoutButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        System.exit(1);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -795,13 +966,17 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton backToMainLoginFromRenterButton;
     private javax.swing.JButton continueAsUnregisteredButton;
     private javax.swing.JButton downArrow;
+    private javax.swing.JButton downArrow1;
+    private javax.swing.JButton emailLandlordRegistered;
     private javax.swing.JButton emailLandlordUnregistered;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -815,6 +990,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JPanel landlordLoginPanel;
     private javax.swing.JTextArea landlordPasswordTextArea;
     private javax.swing.JTextArea landlordUsernameTextArea;
@@ -823,22 +999,29 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton loginAsRegisteredButton;
     private javax.swing.JButton loginAsRenterButton;
     private javax.swing.JButton logoutButton;
+    private javax.swing.JButton logoutButton1;
     private javax.swing.JPanel mainLandlordGUI;
     private javax.swing.JPanel mainLoginPanel;
     private javax.swing.JPanel mainRegisteredGUI;
     private javax.swing.JPanel mainUnregisteredGUI;
     private javax.swing.JPanel managerLoginPanel;
+    private javax.swing.JTextArea registeredDisplay;
     private javax.swing.JPanel registeredRenterLoginPanel;
     private javax.swing.JPanel renterLoginPanel;
     private javax.swing.JTextArea renterPasswordTextArea;
     private javax.swing.JTextArea renterUsernameTextArea;
+    private javax.swing.JButton requestContractRegistered;
     private javax.swing.JButton requestContractUnregistered;
+    private javax.swing.JButton searchPropertyRegisteredButton;
     private javax.swing.JButton searchPropertyUnregisteredButton;
+    private javax.swing.JButton showAllListingsRegisteredButton;
     private javax.swing.JButton showAllListingsUnregisteredButton;
     private javax.swing.JButton submitLandlordLoginButton;
     private javax.swing.JButton submitRenterLoginButton;
     private javax.swing.JTextArea unregisteredDisplay;
     private javax.swing.JTextField unregisteredIDField;
+    private javax.swing.JTextField unregisteredIDField1;
     private javax.swing.JButton upArrow;
+    private javax.swing.JButton upArrow1;
     // End of variables declaration
 }
