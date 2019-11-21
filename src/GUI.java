@@ -26,6 +26,7 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         mainLoginPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         loginAsRenterButton = new javax.swing.JButton();
@@ -72,8 +73,6 @@ public class GUI extends javax.swing.JFrame {
         continueAsUnregisteredButton = new javax.swing.JButton();
         loginAsRegisteredButton = new javax.swing.JButton();
         backToMainLoginFromRenterButton = new javax.swing.JButton();
-        managerLoginPanel = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
         mainRegisteredGUI = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -88,6 +87,29 @@ public class GUI extends javax.swing.JFrame {
         emailLandlordRegistered = new javax.swing.JButton();
         requestContractRegistered = new javax.swing.JButton();
         logoutButton1 = new javax.swing.JButton();
+        managerLoginPanel = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        submitManagerLoginButton = new javax.swing.JButton();
+        backToMainLoginFromManagerButton = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        managerUsernameTextArea = new javax.swing.JTextArea();
+        jLabel19 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        managerPasswordTextArea = new javax.swing.JTextArea();
+        mainManagerGUI = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 689, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 308, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -414,7 +436,7 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap())
         );
 
-        landlordLoginPanel.setBackground(new java.awt.Color(153, 255, 153));
+        landlordLoginPanel.setBackground(new java.awt.Color(255, 153, 255));
         landlordLoginPanel.setMinimumSize(new java.awt.Dimension(350, 175));
 
         jLabel3.setText("Landlord Login");
@@ -558,25 +580,6 @@ public class GUI extends javax.swing.JFrame {
                                 .addGap(11, 11, 11)
                                 .addComponent(backToMainLoginFromRenterButton)
                                 .addContainerGap())
-        );
-
-        jLabel14.setText("Manager");
-
-        javax.swing.GroupLayout managerLoginPanelLayout = new javax.swing.GroupLayout(managerLoginPanel);
-        managerLoginPanel.setLayout(managerLoginPanelLayout);
-        managerLoginPanelLayout.setHorizontalGroup(
-                managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, managerLoginPanelLayout.createSequentialGroup()
-                                .addContainerGap(25, Short.MAX_VALUE)
-                                .addComponent(jLabel14)
-                                .addContainerGap())
-        );
-        managerLoginPanelLayout.setVerticalGroup(
-                managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(jLabel14)
-                                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         mainRegisteredGUI.setBackground(new java.awt.Color(255, 204, 0));
@@ -729,6 +732,111 @@ public class GUI extends javax.swing.JFrame {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        managerLoginPanel.setBackground(new java.awt.Color(153, 255, 153));
+        managerLoginPanel.setMinimumSize(new java.awt.Dimension(350, 175));
+
+        jLabel10.setText("Manager Login");
+        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        submitManagerLoginButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        submitManagerLoginButton.setText("Submit");
+        submitManagerLoginButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        submitManagerLoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitManagerLoginButtonActionPerformed(evt);
+            }
+        });
+
+        backToMainLoginFromManagerButton.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        backToMainLoginFromManagerButton.setText("Back");
+        backToMainLoginFromManagerButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        backToMainLoginFromManagerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backToMainLoginFromManagerButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel18.setText("Username");
+
+        jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane7.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        managerUsernameTextArea.setColumns(20);
+        managerUsernameTextArea.setRows(5);
+        jScrollPane7.setViewportView(managerUsernameTextArea);
+
+        jLabel19.setText("Password");
+
+        jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        managerPasswordTextArea.setColumns(20);
+        managerPasswordTextArea.setRows(5);
+        jScrollPane8.setViewportView(managerPasswordTextArea);
+
+        javax.swing.GroupLayout managerLoginPanelLayout = new javax.swing.GroupLayout(managerLoginPanel);
+        managerLoginPanel.setLayout(managerLoginPanelLayout);
+        managerLoginPanelLayout.setHorizontalGroup(
+                managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
+                                                .addComponent(backToMainLoginFromManagerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                                                .addComponent(submitManagerLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
+                                                .addComponent(jLabel10)
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
+                                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel18)
+                                                        .addComponent(jLabel19))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jScrollPane8)
+                                                        .addComponent(jScrollPane7))))
+                                .addContainerGap())
+        );
+        managerLoginPanelLayout.setVerticalGroup(
+                managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(managerLoginPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel18)
+                                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel19)
+                                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(managerLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(submitManagerLoginButton)
+                                        .addComponent(backToMainLoginFromManagerButton))
+                                .addContainerGap())
+        );
+
+        jLabel14.setText("Manager");
+
+        javax.swing.GroupLayout mainManagerGUILayout = new javax.swing.GroupLayout(mainManagerGUI);
+        mainManagerGUI.setLayout(mainManagerGUILayout);
+        mainManagerGUILayout.setHorizontalGroup(
+                mainManagerGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainManagerGUILayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel14)
+                                .addContainerGap(614, Short.MAX_VALUE))
+        );
+        mainManagerGUILayout.setVerticalGroup(
+                mainManagerGUILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mainManagerGUILayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel14)
+                                .addContainerGap(272, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -761,14 +869,19 @@ public class GUI extends javax.swing.JFrame {
                                         .addGap(0, 0, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
                                         .addGap(61, 61, 61)
                                         .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addContainerGap(61, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(250, 250, 250)
+                                        .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(250, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(mainManagerGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -800,14 +913,19 @@ public class GUI extends javax.swing.JFrame {
                                         .addGap(0, 0, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
                                         .addGap(76, 76, 76)
                                         .addComponent(mainRegisteredGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addContainerGap(77, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(150, 150, 150)
+                                        .addComponent(managerLoginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(150, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(mainManagerGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
@@ -925,6 +1043,16 @@ public class GUI extends javax.swing.JFrame {
         System.exit(1);
     }
 
+    private void submitManagerLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        managerLoginPanel.setVisible(false);
+        mainManagerGUI.setVisible(true);
+    }
+
+    private void backToMainLoginFromManagerButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        managerLoginPanel.setVisible(false);
+        mainLoginPanel.setVisible(true);
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -962,6 +1090,7 @@ public class GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify
     private javax.swing.JButton backToMainLoginFromLandlordButton;
+    private javax.swing.JButton backToMainLoginFromManagerButton;
     private javax.swing.JButton backToMainLoginFromRegisteredRenterButton;
     private javax.swing.JButton backToMainLoginFromRenterButton;
     private javax.swing.JButton continueAsUnregisteredButton;
@@ -970,6 +1099,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton emailLandlordRegistered;
     private javax.swing.JButton emailLandlordUnregistered;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -977,6 +1107,8 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -985,12 +1117,15 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JPanel landlordLoginPanel;
     private javax.swing.JTextArea landlordPasswordTextArea;
     private javax.swing.JTextArea landlordUsernameTextArea;
@@ -1002,9 +1137,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton logoutButton1;
     private javax.swing.JPanel mainLandlordGUI;
     private javax.swing.JPanel mainLoginPanel;
+    private javax.swing.JPanel mainManagerGUI;
     private javax.swing.JPanel mainRegisteredGUI;
     private javax.swing.JPanel mainUnregisteredGUI;
     private javax.swing.JPanel managerLoginPanel;
+    private javax.swing.JTextArea managerPasswordTextArea;
+    private javax.swing.JTextArea managerUsernameTextArea;
     private javax.swing.JTextArea registeredDisplay;
     private javax.swing.JPanel registeredRenterLoginPanel;
     private javax.swing.JPanel renterLoginPanel;
@@ -1017,6 +1155,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton showAllListingsRegisteredButton;
     private javax.swing.JButton showAllListingsUnregisteredButton;
     private javax.swing.JButton submitLandlordLoginButton;
+    private javax.swing.JButton submitManagerLoginButton;
     private javax.swing.JButton submitRenterLoginButton;
     private javax.swing.JTextArea unregisteredDisplay;
     private javax.swing.JTextField unregisteredIDField;
