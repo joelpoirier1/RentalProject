@@ -1,0 +1,9 @@
+PropertyType,Owner,Bedrooms,Bathrooms,Sqft,Status,Payment,YrBuilt
+Apartment,AB@email.com,2,1,799,Avalaible,1000,2000
+AttachedHouse,AB@email.com,2,2,889,Avalaible,1800,1998
+DetachedHouse,CD@email.com,3,2,2190,NonAvalaible,1950,2005
+DetachedHouse,EF@email.com,3,2,2299,Avalaible,1999,2005
+DetachedHouse,CD@email.com,4,3,2300,Avalaible,2000,1999
+Apartment,AD@email.com,2,1,999,Avalaible,1100,2003
+AttachedHouse,PA@email.com,3,2,1890,Avalaible,2300,2007
+TownHouse,SK@email.com,3,2,1700,Avalaible,2202,2010
