@@ -1,0 +1,9 @@
+PropertyID,PropertyType,Owner,Bedrooms,Bathrooms,Sqft,Status,Payment,YrBuilt,Address
+0,Apartment,TE@email.com,10,10,10,Available,10,10,1aveCalgary
+1,Apartment,AB@email.com,2,1,799,Available,1000,2000,2aveCalgary
+2,AttachedHouse,AB@email.com,3,2,889,NonAvailable,1800,2001,3aveCalgary
+3,DetachedHouse,CD@email.com,3,2,2190,Available,1950,2002,4aveCalgary
+4,Apartment,EF@email.com,2,1,999,Available,1100,2003,5aveCalgary
+16,TownHouse,TEST!@email.com,3,3,1888,Available,1600,2002,2677aveCalgary
+28,Apartment,JackK@email.com,100,100,100,NonAvailable,100,100,100aveCalgary
+83,TownHouse,SK@email.com,3,2,1909,Expired,1609,2006,2208aveCalgary

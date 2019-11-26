@@ -14,4 +14,7 @@ public class Email {
 		System.out.println("Email sent!");
 		return;
 	}
+	public String getEmail() {
+		return email;
+	}
 }

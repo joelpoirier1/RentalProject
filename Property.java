@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Property implements Subject{
+	private int randomGeneratedNum;
 	private String propertyType;
 	private Landlord landlordName;
 	private int bedrooms;
@@ -8,11 +9,13 @@ public class Property implements Subject{
 	private int sqft;
 	private int payment;
 	private int yrbuilt;
+	private String address;
 	String status;
 	private ArrayList<Observer> observers;
 	
-	public Property(Landlord landlordName, int bedrooms, int bathrooms, int sqft, int payment,
-			int yrbuilt, String status) {
+	public Property(int r, Landlord landlordName, int bedrooms, int bathrooms, int sqft, int payment,
+			int yrbuilt, String status, String address) {
+		this.randomGeneratedNum = r;
 		this.landlordName = landlordName;
 		this.bedrooms = bedrooms;
 		this.bathrooms = bathrooms;
@@ -20,6 +23,7 @@ public class Property implements Subject{
 		this.payment = payment;
 		this.yrbuilt = yrbuilt;
 		this.status = status;
+		this.address = address;
 	}
 	public String getPropertyType() {
 		return propertyType;
