@@ -4,7 +4,7 @@ import java.sql.Statement;
 
 
 public class Demo {
-/*
+
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 //		Name name = new Name("Jack", "K");
@@ -20,5 +20,5 @@ public class Demo {
 		conn.close();
 	}
 
-*/
+
 }
